@@ -1,0 +1,222 @@
+body {
+  font-family:Century Gothic;
+  background-color:#fafafa;
+}
+
+
+
+#background {
+  padding-top:160px;
+  text-align:center;
+  background-size:cover;
+  height:85px;
+}
+
+header {
+  position:relative;
+  top:5px;
+  text-align:center;
+  width:73%;
+  border-bottom:2px solid black;
+}
+
+a {
+  color:#2B3A42;
+}
+
+a:hover {
+  font-weight:bold;
+  color:0163A4;
+}
+
+#tagline {
+  text-align:center;
+}
+
+#tagline h4 {
+  font-size:1.5em;
+  font-weight:bold;
+  margin-top:2em;
+  font-family:Synchro LET;
+}
+
+nav li {
+  font-size:1.7em;
+  display:inline;
+  margin:0.75em;
+}
+
+#right_bar {
+  position:absolute;
+  right:0px;
+  top:0px;
+  width:25%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#right_bar h1 {
+  font-size:2.5em;
+}
+
+#right_bar a:hover {
+  font-weight:lighter;
+  color:0163A4;
+}
+
+#profile_pic img {
+  border:2px solid black;
+  width:13em;
+  height:auto;
+}
+
+#socialmedia_links{
+  padding-top:2em;
+}
+
+#socialmedia_links li {
+  font-family:American Typewriter;
+  width:8em;
+  height:2em;
+  font-size:1.2em;
+  display:block;
+  padding-top:.2em;
+  border-radius: 1em;
+}
+
+#li_1 {
+  font-weight:bold;
+}
+
+#socialmedia_links a{
+  text-decoration:none;
+}
+
+#socialmedia_links img {
+  height:1em;
+  width:1em;
+  padding-right:.5em;
+}
+
+article {
+  padding:.75em;
+  color: black;
+  width:65%;
+}
+
+.home-content p {
+  font-size:1.25em;
+  position:relative;
+}
+
+.home-content {
+  min-height:35em;
+  width:60%;
+  margin: 3em;
+}
+
+#cat {
+padding-top:3em;
+}
+
+footer {
+  width:100%;
+  clear:both;
+  bottom:0px;
+  font-size:0.9em;
+}
+
+footer p {
+  color:#999999;
+  padding-left:1em;
+}
+
+.horizontal-line {
+    border:1px solid gray;
+    background-color:#cc0000;
+    margin:15px 2px 15px 0px;
+}
+
+article li {
+  padding-top:.5em;
+}
+
+#oxford img {
+  width:80%;
+}
+
+#cttb img {
+  width:80%;
+}
+
+#spiderman img {
+  width:75%;
+}
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+
+/* Centre the page */
+.body {
+    display:block;
+    margin:0 auto;
+    width:576px;
+}
+
+/* Centre the form within the page */
+form {
+    margin:0 auto;
+    width:459px;
+}
+
+/* Style the text boxes */
+input, textarea {
+  width:439px;
+  height:27px;
+  background:#efefef;
+  border:1px solid #dedede;
+  padding:10px;
+  margin-top:3px;
+  font-size:0.9em;
+  color:#3a3a3a;
+}
+
+textarea {
+  height:213px;
+}
+
+input, textarea {
+    width:439px;
+    height:27px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+#submit {
+    width:127px;
+    height:38px;
+    background: gray;
+    font-size:1em;
+    color: white;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+  #submit:hover {
+      opacity:.9;
+  }

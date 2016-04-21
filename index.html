@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Welcome!</title>
+  <meta name="description" content="bio/resume">
+  <meta name="author" content="Michael Du">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/app.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <!-- Contact Form
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="form-box">
+    <form action="https://formspree.io/mdu123@gmail.com"
+    method="POST">
+      <div class="row">
+        <div class="six columns">
+          <label for="exampleEmailInput">Your email</label>
+          <input class="u-full-width" type="email" placeholder="supermikol@mailbox.com" id="exampleEmailInput" name="_replyto">
+        </div>
+        <div class="six columns">
+          <label for="exampleRecipientInput">Reason for contact</label>
+          <select class="u-full-width" id="exampleRecipientInput" name="reason">
+            <option value="greeting">Just sayin hi!</option>
+            <option value="recruitment">Recruitment Opportunities</option>
+          </select>
+        </div>
+      </div>
+      <label for="exampleMessage">Message</label>
+      <textarea class="u-full-width" placeholder="Hi Mike …" id="exampleMessage" name="message"></textarea>
+      <input class="button-primary" type="submit" value="Submit">
+
+    </form>
+  </div>
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row main-box">
+      <div class="nine columns main-left" style="margin-top: 10%">
+        <h1>Hi I'm Michael, and welcome to my site!</h1>
+        <h4>I am a problem solver by day, student by night.</h4>
+
+
+      </div>
+
+      <div class="seven columns main-right" style="margin-top: 10%">
+        <div class="navbox">
+          <ul>
+            <li id="about"><a href="">About</a></li>
+            <li id="blog"><a href="">Blog</a></li>
+            <li id="projects"><a href="">Projects</a></li>
+            <li id="resume"><a href="">Resume</a></li>
+            <li id="contact"><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="icon_nav">
+      <a title="supermikol on Github" href="https://github.com/supermikol">
+        <img class="social_icon" src="images/github_logo.png" alt="github logo"/>
+      </a>
+      <a title="Michael on LinkedIn" href="https://www.linkedin.com/in/michael-du-4927555">
+        <img class="social_icon"  src="images/linkedin_logo.png" alt="linkedin logo"  />
+      </a>
+      <a title="Michael on Zhihu" href="https://www.zhihu.com/people/michael-du-56">
+        <img class="social_icon"  src="images/zhihu_logo.png" alt="zhihu logo"/>
+      </a>
+      <p>
+        a supermikol production ©2016
+      </p>
+    </div>
+
+
+  </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

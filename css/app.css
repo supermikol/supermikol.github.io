@@ -1,0 +1,109 @@
+body {
+  background-color: #FCFFF5;
+}
+
+a { text-decoration: none}
+
+.overlay{
+  display:none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+.form-box {
+  width: 60%;
+  padding: 3%;
+  margin-left: 20%;
+  margin-top: 10%;
+  background-color: #3E606F;
+  color: #D1DBBD;
+  position:fixed;
+  z-index: 11;
+  display: none;
+  border-radius:8px;
+}
+
+.form-box form {
+  margin-bottom: 0;
+}
+
+.main-left {
+  padding: 3%;
+  padding-right: 20%;
+  background-color: #193441;
+  min-height: 500px;
+  color: #FCFFF5;
+}
+
+.main-left h1 {
+  font-weight: bold;
+}
+
+.main-right {
+  padding: 2%;
+  position:absolute;
+  right:3%;
+}
+
+
+.navbox {
+  margin: 5%;
+  width:50%;
+  float:right;
+  padding: 5%;
+  background-color: #91AA9D;
+  opacity: 0.9;
+}
+
+.navbox li {
+  list-style: none;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.social_icon {
+  width: 35px;
+  opacity: 0.25;
+  margin: 1%;
+}
+
+.social_icon:hover {
+  opacity: 0.5;
+}
+
+.icon_nav {
+  text-align:center;
+  margin: 1%;
+}
+
+.navbox a:link, .navbox a:visited {
+  text-decoration:none;
+  color: #FCFFF5;
+}
+
+.navbox a:hover {
+  -webkit-animation: navbar-ani 1s; /* Chrome, Safari, Opera */
+  animation: navbar-ani 1s;
+  color: #193441;
+}
+
+.main-left {
+  -webkit-animation: mymove 3s; /* Chrome, Safari, Opera */
+  animation: mymove 3s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {background-color: #FCFFF5;}
+    to {background-color: #193441;}
+}
+
+@-webkit-keyframes navbar-ani {
+    from {color: #FCFFF5;}
+    to {color: #193441;}
+}

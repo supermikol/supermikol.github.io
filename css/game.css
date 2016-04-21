@@ -1,0 +1,53 @@
+.box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border: 2px solid green;
+}
+
+.game-content {
+  margin:1em;
+  min-height:35em;
+  position:relative;
+  }
+
+.game-content span{
+  display:block;
+}
+
+#box_01, #box_11, #box_21, #box_00, #box_10, #box_20 {
+  width:90px;
+  padding: 5px;
+  position:absolute;
+}
+
+#gametext {
+  display: inline-block;
+}
+
+#controls {
+ padding-bottom:3em;
+}
+
+#scoretable {
+  margin-bottom: 3em;
+}
+
+.invisible {
+  display: inline-block;
+  width: 5em;
+  height: 3em;
+}
+
+.button {
+  display: inline-block;
+  width: 5em;
+  height: 3em;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#row1 {
+  display:block;
+}

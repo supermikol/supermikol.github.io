@@ -1,0 +1,51 @@
+h1 {
+  font-size: 1.5em;
+}
+
+.cheatsheet-content figure {
+  position:relative;
+  left:1em;
+}
+
+.functionname {
+  font-weight: bold;
+  font-size: 1.35em;
+  text-decoration: underline;
+  margin: 1.5em 0 0.3em 0;
+}
+
+.methoddetail {
+  font-size: 1.1em;
+  display:block;
+}
+
+figcaption {
+    font-style:italic;
+    font-size: 0.8em;
+    padding:0.25em;
+    width:50em;
+}
+
+figure img {
+  border:1px solid gray;
+}
+
+.cheatsheet-content {
+  margin:1em;
+  }
+
+.cheatsheet-content p {
+  font-size:1.1em;
+  position:relative;
+}
+
+.code {
+  padding: 0.3em 1em;
+  margin-bottom: 0.3em;
+  font-family: monospace;
+  font-size: 1.4em;
+  display: block;
+  color: white;
+  background-color: grey;
+  white-space:pre;
+}
