@@ -12,7 +12,8 @@ var formSubmissionListener = function(){
     $.ajax({
       method: "POST",
       url: "https://formspree.io/mdu123@gmail.com",
-      data: data
+      data: data,
+      crossDomain : true
     }).done(function(response){
       alert("Message Sent!");
       $('.overlay').fadeOut([2]);
