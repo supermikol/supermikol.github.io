@@ -74,15 +74,21 @@ a { text-decoration: none}
 
 @media only screen and (max-width: 600px) {
 
+  .container {
+    padding:0;
+  }
   .main-left {
     width:100%!important;
     padding-right: 10%;
+    margin-top: 0%!important;
   }
 
   .main-right {
     right: 0!important;
     position:absolute;
-    margin-top: 0px!important;
+    padding: 0;
+
+    margin: 0px!important;
     width: 100%!important;
   }
 
@@ -92,13 +98,14 @@ a { text-decoration: none}
     margin: 0px;
     width:100%;
     padding: 0;
+    padding-top: 1%;
     opacity: 1;
   }
 
   .navbox li{
     display:inline!important;
     font-size: 1.1em;
-    padding: .1em;
+    padding: .3em;
     text-decoration: underline;
   }
 }
