@@ -6,7 +6,7 @@ $(document).ready(function(){
 })
 
 var formSubmissionListener = function(){
-  $('form').on('submit', function(e){
+  $('.form-box').on('submit', 'form', function(e){
     e.preventDefault();
     var data = $(this).serialize()
     $.ajax({
@@ -31,7 +31,12 @@ var navBarListener = function(){
     e.preventDefault();
     var item = $(this).attr('id');
     if (item === 'contact'){
-
+      $.ajax({
+        method:'get',
+        url:'contact_form.html'
+      }).done(function(response){
+        $('.form-box').html(response);
+      })
       $('.overlay').fadeIn([3]);
       $('.form-box').fadeIn([3]);
     } else if (item === 'resume'){
