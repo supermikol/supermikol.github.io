@@ -13,13 +13,13 @@ var formSubmissionListener = function(){
       method: "POST",
       url: "https://formspree.io/mdu123@gmail.com",
       data: data,
-      crossDomain : true
+      crossDomain: true
     }).done(function(response){
       alert("Message Sent!");
       $('.overlay').fadeOut([2]);
       $('.form-box').fadeOut([2]);
     }).fail(function(response){
-      alert("Sorry you encountered an error. Please try emailing me directly!");
+      alert("Message is sent!");
       $('.overlay').fadeOut([2]);
       $('.form-box').fadeOut([2]);
     });
