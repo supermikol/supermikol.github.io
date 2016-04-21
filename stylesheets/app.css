@@ -1,5 +1,6 @@
 body {
   background-color: #FCFFF5;
+  font-family: 'Architects Daughter', cursive;
 }
 
 a { text-decoration: none}
@@ -26,6 +27,11 @@ a { text-decoration: none}
   z-index: 11;
   display: none;
   border-radius:8px;
+  font-size:1.2em;
+}
+
+.form-box textarea, input, select {
+  color: black;
 }
 
 .form-box form {
@@ -96,6 +102,19 @@ a { text-decoration: none}
   -webkit-animation: mymove 3s; /* Chrome, Safari, Opera */
   animation: mymove 3s;
 }
+
+body #resumeViewer{
+  z-index:10;
+  margin-left: 10%;
+  padding: 5%;
+  position: absolute;
+  width: 70%;
+  height: 80%;
+  display: none;
+}
+
+.pdfobject-container { height: 500px;}
+.pdfobject { border: 1px solid #666; }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
