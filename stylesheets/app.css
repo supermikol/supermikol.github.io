@@ -19,7 +19,7 @@ a { text-decoration: none}
 .form-box {
   width: 60%;
   padding: 3%;
-  margin-left: 20%;
+  margin-left: 17%;
   margin-top: 10%;
   background-color: #3E606F;
   color: #D1DBBD;
@@ -39,7 +39,7 @@ a { text-decoration: none}
 }
 
 .main-left {
-  padding: 3%;
+  padding: 10%;
   padding-right: 20%;
   background-color: #193441;
   min-height: 500px;
@@ -56,7 +56,6 @@ a { text-decoration: none}
   right:3%;
 }
 
-
 .navbox {
   margin: 5%;
   width:50%;
@@ -66,10 +65,42 @@ a { text-decoration: none}
   opacity: 0.9;
 }
 
+
 .navbox li {
   list-style: none;
   font-size: 1.5em;
   text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .main-left {
+    width:100%!important;
+    padding-right: 10%;
+  }
+
+  .main-right {
+    right: 0!important;
+    position:absolute;
+    margin-top: 0px!important;
+    width: 100%!important;
+  }
+
+  .navbox {
+    text-align: center;
+    float:none;
+    margin: 0px;
+    width:100%;
+    padding: 0;
+    opacity: 1;
+  }
+
+  .navbox li{
+    display:inline!important;
+    font-size: 1.1em;
+    padding: .1em;
+    text-decoration: underline;
+  }
 }
 
 .social_icon {
@@ -88,7 +119,6 @@ a { text-decoration: none}
 }
 
 .navbox a:link, .navbox a:visited {
-  text-decoration:none;
   color: #FCFFF5;
 }
 
@@ -126,3 +156,4 @@ body #resumeViewer{
     from {color: #FCFFF5;}
     to {color: #193441;}
 }
+
