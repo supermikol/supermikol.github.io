@@ -13,15 +13,28 @@ var formSubmissionListener = function(){
       method: "POST",
       url: "https://formspree.io/mdu123@gmail.com",
       data: data,
-      crossDomain: true
-    }).done(function(response){
-      alert("Message Sent!");
-      $('.overlay').fadeOut([2]);
-      $('.form-box').fadeOut([2]);
-    }).fail(function(response){
-      alert("Message is sent!");
-      $('.overlay').fadeOut([2]);
-      $('.form-box').fadeOut([2]);
+      dataType: 'json',
+      crossDomain: true,
+      beforeSend: function() {
+        $('.form-box').html('<div class="alert alert--loading">Sending message…</div>');
+      },
+      success: function(data) {
+        $('.form-box').find('.alert--loading').hide();
+        $('.form-box').html('<div class="alert alert--success">Message sent!</div>');
+      },
+      error: function(err) {
+        $('.form-box').find('.alert--loading').hide();
+        $('.form-box').html('<div class="alert alert--error">Ops, there was an error.</div>');
+      }
+    // }).done(function(response){
+    //   alert("Message Sent!");
+    //   $('.overlay').fadeOut([2]);
+    //   $('.form-box').fadeOut([2]);
+    // }).fail(function(response){
+    //   alert("Message is sent!");
+    //   $('.overlay').fadeOut([2]);
+    //   $('.form-box').fadeOut([2]);
+    // });
     });
   });
 }

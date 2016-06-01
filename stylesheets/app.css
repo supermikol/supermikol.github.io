@@ -1,6 +1,7 @@
 body {
   background-color: #FCFFF5;
   font-family: 'Architects Daughter', cursive;
+  background-image: url("images/background-fog.jpg");
 }
 
 a { text-decoration: none}
