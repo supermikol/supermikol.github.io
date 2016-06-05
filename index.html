@@ -32,13 +32,102 @@
 <body>
   <div class="overlay"></div>
 
+  <!-- About Me
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="about-me">
+      <h2>Who Is Michael?</h2>
+      <div id='about-block'>
+        <p>This is a question I'm honestly still figuring out. Maybe one day when I'm rich and influential, I'll write a best-selling novel that'll dramatize this humble life of mine, but in the meantime, I'll stick with a few quirks for introductions.</p>
+        <ul>
+          <li>
+            <span><img src="images/acorn.png" /></span>
+            <p>I once lived in a buddhist monastry for 3 months during high school. It's based in Ukiah, and it's called "City of Ten Thousand Buddhas"</p>
+            <div><img src="images/cttb.jpg" alt="cttb" style="margin-left: 20%; width: 60%;"/></div>
+          </li>
+          <li>
+            <span><img src="images/acorn.png" /></span>
+            <p>I fluently speak 3 dialects of Chinese. 4 years in China will do that to you.</p>
+          </li>
+          <li>
+            <span><img src="images/acorn.png" /></span>
+            <p>Although my heritage is Chinese, my parents were born and raised in Vietnam. I also grew up in the Tenderloin, where there is a sizeable Vietnamese population, so I grew up eating Vietnamese food. It's still one of my favorite cuisines.</p>
+          </li>
+          <li>
+            <span><img src="images/acorn.png" /></span>
+            <p>I was on the set of Amazing Spiderman (the one with Andrew Garfield). Random series of events led to me being chosen for a background role, and I was flown to New York (from LA) for a few days. If you pay attention to the lab scene right before Peter Parker gets bitten, you'll see me!</p>
+          </li>
+          <li>
+            <span><img src="images/acorn.png" /></span>
+            <p>Lastly, my greatest petpeeve: Missing oxford comma.</p>
+            <div><img src="images/oxfordcomma.jpg" alt="oxford" style="margin-left: 20%; width: 60%;"/></div>
+          </li>
+        </ul>
+      </div>
+
+
+  </div>
+
   <!-- Contact Form
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="form-box"></div>
+  <div id="form-box">
+    <form action="https://formspree.io/mdu123@gmail.com" method="POST">
+      <div class="row">
+        <div class="six columns">
+          <label for="exampleEmailInput">Your email</label>
+          <input class="u-full-width" type="email" placeholder="supermikol@mailbox.com" id="exampleEmailInput" name="_replyto">
+        </div>
+        <div class="six columns">
+          <label for="exampleRecipientInput">Reason for contact</label>
+          <select class="u-full-width" id="exampleRecipientInput" name="reason">
+            <option value="greeting">Just sayin hi!</option>
+            <option value="recruitment">Recruitment Opportunities</option>
+          </select>
+        </div>
+      </div>
+      <label for="exampleMessage">Message</label>
+      <textarea class="u-full-width" placeholder="Hi Mike …" id="exampleMessage" name="message"></textarea>
+      <input class="button-primary" type="submit" value="Submit">
+    </form>
+  </div>
 
   <!-- Resume View
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="resumeViewer"></div>
+
+ <!-- Projects
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="myProjects">
+    <h3>Projects</h3>
+    <table id="projectslist">
+      <thead>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thermo Aggregation Project</td>
+          <td>Utilized infrared thermometer built onto Arduino boards to detect and gather human temperature data that is then sent to and stored in a Rails-API<br>
+            Contribution: Building Rails-API, configuring Arduino in C, and parsing data between device/API/web-application
+            <br>
+            <strong>Github:</strong> <a href="https://github.com/WALTERKERR/TAP">https://github.com/WALTERKERR/TAP</a>
+            <br>
+            <strong>Deployment:</strong> <a href="http://thermo-aggregation-project.herokuapp.com">http://thermo-aggregation-project.herokuapp.com</a></td>
+        </tr>
+        <tr>
+          <td>Kanluqu</td>
+          <td>A fully-functional (but still in-progress) full-stack Rails web app for students to share and view college applications. Incorporates HPE Haven On Demand API to score sentiment for submitted essays.
+          <br>
+          <strong>Github:</strong> <a href="https://github.com/supermikol/kanluqu">https://github.com/supermikol/kanluqu</a>
+          <br>
+          <strong>Deployment:</strong> <a href="http://kanluqu.herokuapp.com">http://kanluqu.herokuapp.com (Please contact me for login credentials!)</a></td>
+        </tr>
+        <tr>
+          <td>Mortar Analytics</td>
+          <td>An experimental business analytics/financial management platform built using Rails and JavaScript. <br>Contribution: Customizing layout, building Rails-API, creating form for new entries, and building table
+          <br><strong>Github:</strong> <a href="https://github.com/supermikol/mortar-analytics">https://github.com/supermikol/mortar-analytics</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -63,21 +152,22 @@
 
     </div>
 
-    <div class="footer icon_nav">
-      <a title="supermikol on Github" href="https://github.com/supermikol">
-        <img class="social_icon" src="images/github_logo.png" alt="github logo"/>
-      </a>
-      <a title="Michael on LinkedIn" href="https://www.linkedin.com/in/michael-du-4927555">
-        <img class="social_icon"  src="images/linkedin_logo.png" alt="linkedin logo"  />
-      </a>
-      <a title="Michael on Zhihu" href="https://www.zhihu.com/people/michael-du-56">
-        <img class="social_icon"  src="images/zhihu_logo.png" alt="zhihu logo"/>
-      </a>
-      <p>
-        a supermikol production ©2016
-      </p>
+    <div class="footer">
+      <div class="icon_nav">
+        <a title="supermikol on Github" href="https://github.com/supermikol">
+          <img class="social_icon" src="images/github_logo.png" alt="github logo"/>
+        </a>
+        <a title="Michael on LinkedIn" href="https://www.linkedin.com/in/michael-du-4927555">
+          <img class="social_icon"  src="images/linkedin_logo.png" alt="linkedin logo"  />
+        </a>
+        <a title="Michael on Zhihu" href="https://www.zhihu.com/people/michael-du-56">
+          <img class="social_icon"  src="images/zhihu_logo.png" alt="zhihu logo"/>
+        </a>
+        <p>
+          a supermikol production ©2016
+        </p>
+      </div>
     </div>
-
 
   </div>
 
