@@ -63,6 +63,7 @@ a { text-decoration: none}
 
 #about-block {
   font-size:1.3em;
+  text-shadow: 1px 1px 0px #000000;
   margin-left:10px;
   font-family: 'HelveticaNeue';
 }
