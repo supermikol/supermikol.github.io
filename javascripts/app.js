@@ -67,5 +67,9 @@ var closeForm = function(){
     $('#myProjects').fadeOut([2]);
     $('#resumeViewer').fadeOut([2]);
   });
+  $('#resumeViewer').on('click', function(e){
+    $('.overlay').fadeOut([2]);
+    $('#resumeViewer').fadeOut([2]);
+  })
 
 };
