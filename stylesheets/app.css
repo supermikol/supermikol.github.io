@@ -18,7 +18,7 @@ a { text-decoration: none}
   background-color: rgba(0,0,0,0.5); /*dim the background*/
 }
 
-.form-box {
+#form-box {
   width: 60%;
   padding: 3%;
   margin-left: 17%;
@@ -32,11 +32,25 @@ a { text-decoration: none}
   font-size:1.2em;
 }
 
-.form-box textarea, input, select {
+#about-me {
+  width: 60%;
+  padding: 3%;
+  margin-left: 17%;
+  margin-top: 5%;
+  background-color: #3E606F;
+  color: #D1DBBD;
+  position:fixed;
+  z-index: 11;
+  display: none;
+  border-radius:8px;
+  font-size:1.2em;
+}
+
+#form-box textarea, input, select {
   color: black;
 }
 
-.form-box form {
+#form-box form {
   margin-bottom: 0;
 }
 

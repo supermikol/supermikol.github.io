@@ -32,13 +32,61 @@
 <body>
   <div class="overlay"></div>
 
+  <!-- About Me
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="about-me">
+    <div>
+      <h5>Who Is Michael?</h5>
+      This is a question I'm still figuring out myself. Maybe one day when I'm rich and famous, I'll write a best-selling novel that'll dramatize this humble life of mine, but in the meantime, I'll stick with quirks.
+
+      I once lived in a buddhist monastry for 3 months during high school. It's based in Ukiah, and it's called "City of Ten Thousand Buddhas"
+      <img src="images/cttb.jpg" alt="cttb" style="width: 90%;"/>
+
+      I can fluently speak 3 dialects of Chinese. 4 years in China will do that to you.
+
+      Although my heritage is Chinese, my parents were born and raised in Vietnam. I also grew up in the Tenderloin, where there is a sizeable Vietnamese population, so I grew up eating Vietnamese food. It's still one of my favorite cuisines.
+
+      I was on the set of Amazing Spiderman (the one with Andrew Garfield). Random series of events led to me being chosen for a background role, and I was flown to New York (from LA) for a few days. If you pay attention to the lab scene right before Peter Parker gets bitten, you'll see me!
+
+      Lastly, my greatest petpeeve: Missing oxford comma
+      <img src="images/oxfordcomma.jpg" alt="oxford" style="width: 90%;"/>
+
+    </div>
+    <div class="row">
+
+    </div>
+  </div>
+
   <!-- Contact Form
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="form-box"></div>
+  <div id="form-box">
+    <form action="https://formspree.io/mdu123@gmail.com" method="POST">
+      <div class="row">
+        <div class="six columns">
+          <label for="exampleEmailInput">Your email</label>
+          <input class="u-full-width" type="email" placeholder="supermikol@mailbox.com" id="exampleEmailInput" name="_replyto">
+        </div>
+        <div class="six columns">
+          <label for="exampleRecipientInput">Reason for contact</label>
+          <select class="u-full-width" id="exampleRecipientInput" name="reason">
+            <option value="greeting">Just sayin hi!</option>
+            <option value="recruitment">Recruitment Opportunities</option>
+          </select>
+        </div>
+      </div>
+      <label for="exampleMessage">Message</label>
+      <textarea class="u-full-width" placeholder="Hi Mike …" id="exampleMessage" name="message"></textarea>
+      <input class="button-primary" type="submit" value="Submit">
+    </form>
+  </div>
 
   <!-- Resume View
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="resumeViewer"></div>
+
+ <!-- Projects
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="projects"></div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -6,7 +6,7 @@ $(document).ready(function(){
 })
 
 var formSubmissionListener = function(){
-  $('.form-box').on('submit', 'form', function(e){
+  $('#form-box').on('submit', 'form', function(e){
     e.preventDefault();
     var data = $(this).serialize()
     $.ajax({
@@ -16,24 +16,24 @@ var formSubmissionListener = function(){
       dataType: 'json',
       crossDomain: true,
       beforeSend: function() {
-        $('.form-box').html('<div class="alert alert--loading">Sending message…</div>');
+        $('#form-box').html('<div class="alert alert--loading">Sending message…</div>');
       },
       success: function(data) {
-        $('.form-box').find('.alert--loading').hide();
-        $('.form-box').html('<div class="alert alert--success">Message sent!</div>');
+        $('#form-box').find('.alert--loading').hide();
+        $('#form-box').html('<div class="alert alert--success">Message sent!</div>');
       },
       error: function(err) {
-        $('.form-box').find('.alert--loading').hide();
-        $('.form-box').html('<div class="alert alert--error">Ops, there was an error.</div>');
+        $('#form-box').find('.alert--loading').hide();
+        $('#form-box').html('<div class="alert alert--error">Ops, there was an error.</div>');
       }
     // }).done(function(response){
     //   alert("Message Sent!");
     //   $('.overlay').fadeOut([2]);
-    //   $('.form-box').fadeOut([2]);
+    //   $('#form-box').fadeOut([2]);
     // }).fail(function(response){
     //   alert("Message is sent!");
     //   $('.overlay').fadeOut([2]);
-    //   $('.form-box').fadeOut([2]);
+    //   $('#form-box').fadeOut([2]);
     // });
     });
   });
@@ -44,18 +44,15 @@ var navBarListener = function(){
     e.preventDefault();
     var item = $(this).attr('id');
     if (item === 'contact'){
-      $.ajax({
-        method:'get',
-        url:'contact_form.html'
-      }).done(function(response){
-        $('.form-box').html(response);
-      })
       $('.overlay').fadeIn([3]);
-      $('.form-box').fadeIn([3]);
+      $('#form-box').fadeIn([3]);
     } else if (item === 'resume'){
-
       $('.overlay').fadeIn([3]);
       $('#resumeViewer').fadeIn([3]);
+    } else if (item == 'about'){
+      $('.overlay').fadeIn([3]);
+      $('#about-me').fadeIn([3]);
+
     }
   })
 };
@@ -63,7 +60,9 @@ var navBarListener = function(){
 var closeForm = function(){
   $('.overlay').on('click', function(e){
     $('.overlay').fadeOut([2]);
-    $('.form-box').fadeOut([2]);
+    $('#form-box').fadeOut([2]);
+    $('#about-me').fadeOut([2]);
+    $('.projects').fadeOut([2]);
     $('#resumeViewer').fadeOut([2]);
   });
 
