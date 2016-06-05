@@ -35,26 +35,36 @@
   <!-- About Me
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="about-me">
-    <div>
-      <h3>Who Is Michael?</h3>
-      <div>This is a question I'm still figuring out myself. Maybe one day when I'm rich and famous, I'll write a best-selling novel that'll dramatize this humble life of mine, but in the meantime, I'll stick with a few quirks for introductions.</div>
+      <h2>Who Is Michael?</h2>
+      <div id='about-block'>
+        <p>This is a question I'm honestly still figuring out. Maybe one day when I'm rich and influential, I'll write a best-selling novel that'll dramatize this humble life of mine, but in the meantime, I'll stick with a few quirks for introductions.</p>
+        <ul>
+          <li>
+            <span><img src="images/acorn.png" /></span>
+            <p>I once lived in a buddhist monastry for 3 months during high school. It's based in Ukiah, and it's called "City of Ten Thousand Buddhas"</p>
+            <div><img src="images/cttb.jpg" alt="cttb" style="margin-left: 20%; width: 60%;"/></div>
+          </li>
+          <li>
+            <span><img src="images/acorn.png" /></span>
+            <p>I fluently speak 3 dialects of Chinese. 4 years in China will do that to you.</p>
+          </li>
+          <li>
+            <span><img src="images/acorn.png" /></span>
+            <p>Although my heritage is Chinese, my parents were born and raised in Vietnam. I also grew up in the Tenderloin, where there is a sizeable Vietnamese population, so I grew up eating Vietnamese food. It's still one of my favorite cuisines.</p>
+          </li>
+          <li>
+            <span><img src="images/acorn.png" /></span>
+            <p>I was on the set of Amazing Spiderman (the one with Andrew Garfield). Random series of events led to me being chosen for a background role, and I was flown to New York (from LA) for a few days. If you pay attention to the lab scene right before Peter Parker gets bitten, you'll see me!</p>
+          </li>
+          <li>
+            <span><img src="images/acorn.png" /></span>
+            <p>Lastly, my greatest petpeeve: Missing oxford comma.</p>
+            <div><img src="images/oxfordcomma.jpg" alt="oxford" style="margin-left: 20%; width: 60%;"/></div>
+          </li>
+        </ul>
+      </div>
 
-      <div>I once lived in a buddhist monastry for 3 months during high school. It's based in Ukiah, and it's called "City of Ten Thousand Buddhas"</div>
-      <div><img src="images/cttb.jpg" alt="cttb" style="width: 90%;"/></div>
 
-      <div>I can fluently speak 3 dialects of Chinese. 4 years in China will do that to you.</div>
-
-      <div>Although my heritage is Chinese, my parents were born and raised in Vietnam. I also grew up in the Tenderloin, where there is a sizeable Vietnamese population, so I grew up eating Vietnamese food. It's still one of my favorite cuisines.</div>
-
-      <div>I was on the set of Amazing Spiderman (the one with Andrew Garfield). Random series of events led to me being chosen for a background role, and I was flown to New York (from LA) for a few days. If you pay attention to the lab scene right before Peter Parker gets bitten, you'll see me!</div>
-
-      <div>Lastly, my greatest petpeeve: Missing oxford comma</div>
-      <div><img src="images/oxfordcomma.jpg" alt="oxford" style="width: 90%;"/></div>
-
-    </div>
-    <div class="row">
-
-    </div>
   </div>
 
   <!-- Contact Form
@@ -86,7 +96,41 @@
 
  <!-- Projects
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div id="projects"></div>
+  <div id="myProjects">
+    <h3>Projects</h3>
+    <table id="projectslist">
+      <thead>
+        <tr>
+          <th>Project Name</th>
+          <th>Description</th>
+          <th>Github</th>
+          <th>Deployment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thermo Aggregation Project</td>
+          <td>Utilized infrared thermometer built onto Arduino boards to detect and gather human temperature data that is then sent to and stored in a Rails-API<br>
+            Contribution: Building Rails-API, configuring Arduino in C, and parsing data between device/API/web-application</td>
+          <td><a href="https://github.com/WALTERKERR/TAP">https://github.com/WALTERKERR/TAP</a></td>
+          <td><a href="http://thermo-aggregation-project.herokuapp.com">http://thermo-aggregation-project.herokuapp.com</a></td>
+        </tr>
+        <tr>
+          <td>Kanluqu</td>
+          <td>A fully-functional (but still in-progress) full-stack Rails web app for students to share and view college applications. Incorporates HPE Haven On Demand API to score sentiment for submitted essays.</td>
+          <td><a href="https://github.com/supermikol/kanluqu">https://github.com/supermikol/kanluqu</a></td>
+          <td><a href="http://kanluqu.herokuapp.com">http://kanluqu.herokuapp.com (Please contact me for login credentials!)</a></td>
+        </tr>
+        <tr>
+          <td>Mortar Analytics</td>
+          <td>An experimental business analytics/financial management platform built using Rails and JavaScript. <br>Contribution: Customizing layout, building Rails-API, creating form for new entries, and building table</td>
+          <td><a href="https://github.com/supermikol/mortar-analytics">https://github.com/supermikol/mortar-analytics</a></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -52,7 +52,9 @@ var navBarListener = function(){
     } else if (item == 'about'){
       $('.overlay').fadeIn([3]);
       $('#about-me').fadeIn([3]);
-
+    } else if (item == 'projects'){
+      $('.overlay').fadeIn([3]);
+      $('#myProjects').fadeIn([3]);
     }
   })
 };
@@ -62,7 +64,7 @@ var closeForm = function(){
     $('.overlay').fadeOut([2]);
     $('#form-box').fadeOut([2]);
     $('#about-me').fadeOut([2]);
-    $('.projects').fadeOut([2]);
+    $('#myProjects').fadeOut([2]);
     $('#resumeViewer').fadeOut([2]);
   });
 

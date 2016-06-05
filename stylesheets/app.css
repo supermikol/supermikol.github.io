@@ -26,6 +26,7 @@ a { text-decoration: none}
   background-color: rgba(0,0,0,0.5); /*dim the background*/
 }
 
+
 #form-box {
   width: 60%;
   padding: 3%;
@@ -40,12 +41,12 @@ a { text-decoration: none}
   font-size:1.2em;
 }
 
-#about-me {
+#about-me, #myProjects {
   overflow-y: scroll;
   height: 75%;
-  width: 60%;
+  width: 75%;
   padding: 3%;
-  margin-left: 17%;
+  margin-left: 9%;
   margin-top: 3%;
   background-color: #3E606F;
   color: #D1DBBD;
@@ -53,7 +54,50 @@ a { text-decoration: none}
   z-index: 11;
   display: none;
   border-radius:8px;
-  font-size:1.2em;
+  color:white;
+}
+
+#about-me h2 {
+  text-align:center;
+}
+
+#about-block {
+  font-size:1.3em;
+  margin-left:10px;
+  font-family: 'HelveticaNeue';
+}
+
+#about-block li {
+  list-style: none;
+  font-size:0.9em;
+}
+
+#about-block li p {
+  position: relative;
+  padding-left: 60px;
+}
+
+#about-block li span {
+  position: absolute;
+  width: 60px;
+  text-align: center;
+}
+
+#about-block span img {
+  padding-top:20%;
+  width:55%;
+}
+
+#myProjects h3 {
+  text-align:center;
+}
+
+#myProjects #projectslist {
+  font-family: 'HelveticaNeue';
+}
+
+#myProjects a:link, #myProjects a:visited {
+  color: #D1DBBD;
 }
 
 #form-box textarea, input, select {
