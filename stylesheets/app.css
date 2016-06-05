@@ -1,8 +1,16 @@
+body, .container, html {
+  height: 100%;
+}
+
+.container {
+  position: relative;
+}
+
 body {
   background-color: #FCFFF5;
   font-family: 'Architects Daughter', cursive;
   background: url("../images/foggy.jpg") no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
 }
 
 a { text-decoration: none}
@@ -33,10 +41,12 @@ a { text-decoration: none}
 }
 
 #about-me {
+  overflow-y: scroll;
+  height: 75%;
   width: 60%;
   padding: 3%;
   margin-left: 17%;
-  margin-top: 5%;
+  margin-top: 3%;
   background-color: #3E606F;
   color: #D1DBBD;
   position:fixed;
@@ -95,48 +105,10 @@ a { text-decoration: none}
   text-align: right;
 }
 
-@media only screen and (max-width: 600px) {
-
-  .container {
-    padding:0;
-  }
-  .main-left {
-    width:100%!important;
-    padding-right: 10%;
-    padding-top: 20%;
-    margin-top: 0%!important;
-  }
-
-  .main-right {
-    right: 0!important;
-    position:absolute;
-    padding: 0;
-
-    margin: 0px!important;
-    width: 100%!important;
-  }
-
-  .navbox {
-    text-align: center;
-    float:none;
-    margin: 0px;
-    width:100%;
-    padding: 0;
-    padding-top: 1%;
-    opacity: 1;
-  }
-
-  .navbox li{
-    display:inline!important;
-    font-size: 1.1em;
-    padding: .3em;
-    text-decoration: underline;
-  }
-}
 
 .social_icon {
   width: 35px;
-  opacity: 0.25;
+  opacity: 0.8;
   margin: 1%;
 }
 
@@ -150,6 +122,8 @@ a { text-decoration: none}
 }
 
 .footer {
+  width: 100%;
+  position:absolute;
   bottom: 0;
 }
 
@@ -182,9 +156,11 @@ body #resumeViewer{
 .pdfobject { border: 1px solid #666; }
 
 /* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    from {background-color: #FCFFF5;}
-    to {background-color: #193441;}
+@media (min-width: 601px) {
+  @-webkit-keyframes mymove {
+      from {background-color: #FCFFF5;}
+      to {background-color: #193441;}
+  }
 }
 
 @-webkit-keyframes navbar-ani {
@@ -192,3 +168,63 @@ body #resumeViewer{
     to {color: #193441;}
 }
 
+@media (min-width: 950px) {
+  body {
+    background-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  #form-box, #about-me, #resumeViewer {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    box-sizing: border-box;
+  }
+
+  .container {
+    padding:0;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .main-left {
+    width:100%!important;
+    padding-right: 10%;
+    border-radius: 10px;
+    opacity:0.6;
+    background: none;
+    color: #3E606F;
+    margin-top: 18%;
+  }
+
+  .main-right {
+    right: 0!important;
+    position:absolute;
+    padding: 0;
+    width: 100%!important;
+  }
+
+  .navbox {
+    border-radius: 4px;
+    text-align: center;
+    float:none;
+    margin: 0px;
+    width:100%;
+    padding: 0;
+    padding-top: 1%;
+    background: none;
+  }
+
+  .navbox li{
+    display:inline!important;
+    font-size: 1.1em;
+    padding: .3em;
+    text-decoration: underline;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+}
