@@ -1,0 +1,30 @@
+.project-thumb {
+  max-width: 100%;
+}
+
+#klq-display {
+  /*display:none;*/
+}
+
+#ma-display {
+  display:none;
+}
+
+#tap-display {
+  display:none;
+
+}
+
+.proj-desc {
+  font-family: 'HelveticaNeue';
+}
+
+
+.project-img {
+  width: 100%;
+}
+
+.carousel {
+  margin-left: 10%;
+  width: 80%;
+}
