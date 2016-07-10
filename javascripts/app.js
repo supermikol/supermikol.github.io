@@ -5,10 +5,6 @@ $(document).ready(function(){
   formSubmissionListener();
   PDFObject.embed("files/mdu_resume.pdf", "#resumeViewer");
   projectPageListener();
-  $('.carousel').slick({
-    dots: true,
-    fade: true
-  });
 })
 
 var formSubmissionListener = function(){
@@ -78,5 +74,9 @@ var projectPageListener = function() {
     var display = $(this).attr('href')
     $('.proj-display').hide();
     $(display).show();
+    $(display + ' .carousel').slick({
+      dots: true,
+      fade: true
+    });
   })
 }

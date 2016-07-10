@@ -3,7 +3,7 @@
 }
 
 #klq-display {
-  /*display:none;*/
+  display:none;
 }
 
 #ma-display {
@@ -21,7 +21,7 @@
 
 
 .project-img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .carousel {

@@ -44,9 +44,7 @@ a { text-decoration: none}
 #about-me, #myProjects {
   overflow-y: scroll;
   height: 75%;
-  width: 85%;
   padding: 3%;
-  margin-left: 5%;
   margin-top: 3%;
   background-color: #3E606F;
   color: #D1DBBD;
@@ -55,6 +53,16 @@ a { text-decoration: none}
   display: none;
   border-radius:8px;
   color:white;
+}
+
+#about-me {
+  width: 75%;
+  margin-left: 9%;
+}
+
+#myProjects {
+  width: 90%;
+  margin-left: 2%;
 }
 
 #about-me h2 {
