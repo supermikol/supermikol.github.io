@@ -1,8 +1,10 @@
 $(document).ready(function(){
+
   navBarListener();
   closeForm();
   formSubmissionListener();
   PDFObject.embed("files/mdu_resume.pdf", "#resumeViewer");
+  projectPageListener();
 })
 
 var formSubmissionListener = function(){
@@ -26,15 +28,7 @@ var formSubmissionListener = function(){
         $('#form-box').find('.alert--loading').hide();
         $('#form-box').html('<div class="alert alert--error">Ops, there was an error.</div>');
       }
-    // }).done(function(response){
-    //   alert("Message Sent!");
-    //   $('.overlay').fadeOut([2]);
-    //   $('#form-box').fadeOut([2]);
-    // }).fail(function(response){
-    //   alert("Message is sent!");
-    //   $('.overlay').fadeOut([2]);
-    //   $('#form-box').fadeOut([2]);
-    // });
+
     });
   });
 }
@@ -73,3 +67,16 @@ var closeForm = function(){
   })
 
 };
+
+var projectPageListener = function() {
+  $('.thumb-nav').on('click', 'a', function(e){
+    // e.preventDefault();
+    var display = $(this).attr('href')
+    $('.proj-display').hide();
+    $(display).show();
+    $(display + ' .carousel').slick({
+      dots: true,
+      fade: true
+    });
+  })
+}
