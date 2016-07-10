@@ -60,6 +60,12 @@ a { text-decoration: none}
   margin-left: 9%;
 }
 
+#profile_img {
+  width: 30%;
+  float:left;
+  margin: 15px;
+}
+
 #myProjects {
   width: 90%;
   margin-left: 2%;
