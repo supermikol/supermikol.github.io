@@ -49,6 +49,10 @@ var navBarListener = function(){
     } else if (item == 'projects'){
       $('.overlay').fadeIn([3]);
       $('#myProjects').fadeIn([3]);
+    } else if (item == 'mean-wall'){
+      event.stopPropagation();
+      console.log(this);
+      window.open("http://mean-wall.supermikol.com", '_blank');
     }
   })
 };
